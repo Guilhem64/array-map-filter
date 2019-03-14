@@ -50,7 +50,8 @@ Sortie attendue:
 
 */
 
-function getStudentsPerCurriculum(campuses, curriculumName) {
+const getStudentsPerCurriculum=(campuses, curriculumName)=> {
+  
 }
 
 module.exports = getStudentsPerCurriculum;
