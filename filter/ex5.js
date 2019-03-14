@@ -38,7 +38,9 @@ Exemple d'entrée:
 
  */
 
-function searchWordFilter(items, search) {
+const searchWordFilter = (items, search) => {
+  const tab = items.filter(ez => ez.toLowerCase().includes(search))
+  return tab
 }
 
 // Ne pas modifier l'export

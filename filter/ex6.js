@@ -27,6 +27,17 @@ Sortie attendue:
 */
 
 function filterOffensiveComments(comments, bannedWords) {
+  const tab = comments.filter(caca => {
+    for (let i = 0; i < bannedWords.length; i++) {
+      if (caca.toLowerCase().includes(bannedWords[i])) {
+        return false
+      }
+    }
+    return true
+
+
+  })
+  return tab
 }
 
 // Ne pas modifier l'export
